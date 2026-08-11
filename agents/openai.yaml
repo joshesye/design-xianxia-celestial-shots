@@ -1,0 +1,13 @@
+interface:
+  display_name: 仙侠天宫远景运镜
+  short_description: 根据参考图生成可复用的仙侠天宫远景构图、图片提示词与运镜方案
+  default_prompt: 使用 $design-xianxia-celestial-shots 根据参考图生成可复用的天宫远景构图与运镜提示词。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
