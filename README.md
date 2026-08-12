@@ -74,6 +74,32 @@ git clone https://github.com/joshesye/design-xianxia-celestial-shots.git ~/.code
 
 详细模板与控制词见 [输出规范](references/output-contract.md)。
 
+##完整案例
+
+01｜中央云阶·三仙女望天门
+
+一幅宏大的东方仙侠天宫电影大全景。浩瀚云海之上，一条极其宽阔的白玉天阶从画面底部展开，沿唯一中央轴线不断向上收束，通往画面顶部中央一座悬浮于云端的巨型南天门。天门由汉白玉、暗金飞檐、通天巨柱和云龙浮雕构成，规模远超人物，局部建筑超出画框；天门之后隐约显现层叠天宫、悬浮楼阁与垂落云瀑。
+
+正好三名成年仙女位于天阶中远段，集中在画面下方中央，完整背影，共同抬头凝望天门。三人分别穿月白、淡青和浅金色广袖仙裙，前后错开，其中月白仙女领先半步；单个人物高度仅占画面3%–5%，不表现面部，只通过服色、轮廓和飘动衣摆辨认人物。风从左侧吹向右侧，长袖与披帛沿同一方向轻柔飘动。
+
+16:9电影横幅，65mm镜头，轻微高机位，大远景，严格单点透视，f/8深景深。天阶、栏杆、石缝、三名仙女、天门入口与远方主殿完全共轴。建筑、天阶和云海占画面95%以上。清晨暖金阳光从左上方穿透云层，为天门、栏杆与人物轮廓形成柔和逆光；阴影保持冷青灰，真实云海体积、空气透视、电影颗粒。
+
+extreme wide establishing shot, tiny distant adult female figures, people as scale reference only, architecture-dominant composition, monumental celestial gate, deep depth of field, photorealistic Chinese xianxia film still, no prominent character, no portrait framing, 16:9.
+
+02｜悬崖松台·独立仙女望金门
+
+一幅庄严而孤寂的东方仙侠电影大远景。画面左侧是局部超出画框的深色悬崖和一棵枝干虬结的千年古松，粗壮松枝从左上方伸向中央，形成天然框景。一座狭长的白玉悬空平台从悬崖向画面中央延伸，下方完全悬浮于翻涌云海之上。
+
+正好一名成年白衣仙女静立在悬台远端，完全背对镜头，双手自然垂落，仰望对面垂直巨峰中的恢宏天门。人物位于画面下方偏左，高度约占画面4%，只作尺度参照，无其他人物。她身穿层叠月白广袖仙裙，衣摆与披帛被右侧来风轻轻吹向左后方，不回头、不露正脸。
+
+远方天门占据画面中央偏右，由暗红巨柱、鎏金重檐、白玉门壁和巨幅山河浮雕组成，占画面高度约55%；门内流动着克制的暖金天光，门楼两侧各有一道瀑布从天宫边缘连续坠入云海。外围宫殿沿垂直山壁层层向后升高，重复飞檐与巨柱逐渐隐入雾中。
+
+16:9，70mm长焦大远景，平视至轻微高机位，f/8深景深。古松、悬台、仙女、巨门和云海形成明确的前中后景层次。建筑、云海与悬崖占画面96%，人物不得放大。暖金门光与冷青灰山壁形成冷暖对比，真实石材、木构、瀑布重力、体积雾与空气透视。
+
+extreme wide establishing shot, one tiny distant adult fairy seen from behind, people as scale reference only, monumental architecture, architecture-dominant composition, photorealistic, no portrait framing, 16:9.
+
+
+
 ## 项目结构
 
 ```text
