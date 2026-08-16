@@ -10,6 +10,7 @@
 - **固定骨架与变量分离**：锁定不应变化的空间关系，把人物、服装、建筑、奇观、环境、光线和情绪整理为可替换属性。
 - **16 种构图原型**：覆盖柱廊、天阶、崖边、飞瀑、水庭、悬台、圆月门、云海廊桥、透明锦鲤台等典型场景。
 - **完整提示词控制**：同时提供通用模板、完整案例、负面提示词和构图锁定句。
+- **MJ 专用优化**：当用户指定 Midjourney/MJ 或粘贴 `--ar` 参数时，切换为紧凑电影设定式 prompt，保留原生参数和 `--no` 控制。
 - **人数与队形约束**：支持单人、双人、小群像和 50 人以上大队列的空间组织。
 - **可选视频运镜**：在静帧构图成立后，追加缓推、侧移、跟拍、揭示或轻微升降等单一主运动。
 
@@ -59,22 +60,35 @@ git clone https://github.com/joshesye/design-xianxia-celestial-shots.git ~/.code
 使用 $design-xianxia-celestial-shots 将这个天宫远景扩展为 10 秒一镜到底运镜，保持人物位置、建筑轴线和地平线稳定。
 ```
 
+### 生成 Midjourney 天宫提示词
+
+```text
+使用 $design-xianxia-celestial-shots 参考这批天宫 MJ 图，生成一个 16:9 云宫长廊提示词，保留 --ar、--raw、--stylize 和 --no 控制。
+```
+
 ## 输出内容
 
 默认按以下顺序交付：
 
-1. 核心构图公式
-2. 固定构图骨架表
-3. 可替换属性
-4. 带变量的通用提示词
-5. 完整提示词案例
-6. 负面提示词
-7. 构图锁定句
-8. 可选的 5–15 秒运镜模块
+- 未指定模型 / ChatGPT-image2：
+  1. 核心构图公式
+  2. 固定构图骨架表
+  3. 可替换属性
+  4. 带变量的通用提示词
+  5. 完整提示词案例
+  6. 负面提示词
+  7. 构图锁定句
+  8. 可选的 5–15 秒运镜模块
+
+- Midjourney/MJ：
+  1. MJ升级思路
+  2. Midjourney完整提示词
+  3. 可选负面词
+  4. 如果还糊
 
 详细模板与控制词见 [输出规范](references/output-contract.md)。
 
-##完整案例
+## 完整案例
 
 01｜中央云阶·三仙女望天门
 
@@ -110,15 +124,17 @@ extreme wide establishing shot, one tiny distant adult fairy seen from behind, p
 │   └── openai.yaml
 ├── assets/
 │   └── icon.svg
-└── references/
-    ├── composition-archetypes.md
-    ├── latest-scene-cases.md
-    └── output-contract.md
+├── references/
+│   ├── composition-archetypes.md
+│   ├── latest-scene-cases.md
+│   ├── midjourney-celestial-palace-rules.md
+│   └── output-contract.md
 ```
 
 - [SKILL.md](SKILL.md)：主工作流程、视觉规则、镜头选择与输出要求。
 - [composition-archetypes.md](references/composition-archetypes.md)：16 种构图原型及系列统一规则。
 - [latest-scene-cases.md](references/latest-scene-cases.md)：M–P 原型的完整场景案例。
+- [midjourney-celestial-palace-rules.md](references/midjourney-celestial-palace-rules.md)：从天宫 MJ 提示词提炼的 Midjourney 专用规则、模块、参数和负面词。
 - [output-contract.md](references/output-contract.md)：提示词、负面词、构图锁定句与运镜模板。
 
 ## 注意事项

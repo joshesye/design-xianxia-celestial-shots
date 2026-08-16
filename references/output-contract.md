@@ -9,6 +9,7 @@
 5. 视频运镜附加模块
 6. 完整简例
 7. M–P 原型专用控制
+8. Midjourney 专用输出短模板
 
 ## 1. 回答结构
 
@@ -22,6 +23,8 @@
 6. `负面提示词`：先构图错误，再人体/材质错误，最后文字与画质错误。
 7. `构图锁定句`：短、强、可首尾重复。
 8. `运镜模块`：仅在视频请求中出现。
+
+MJ 路由不使用这套完整表格结构，改用 `SKILL.md` 中的 Midjourney 输出要求和 `midjourney-celestial-palace-rules.md`。
 
 ## 2. 通用提示词模板
 
@@ -225,3 +228,25 @@ photorealistic，epic Chinese xianxia film still，16:9，无文字、无字幕�
 - 只继承匹配原型的固定骨架，不把四个案例的奇观平均混合到同一画面。
 - M 以连续桥路和三级人群密度为主；N 以透明水体物理和鱼群层级为主；O 以唯一中轴和双人互动道具为主；P 以横向宫城飞瀑和暖冷双人冲突为主。
 - 完整案例必须把专用锁定句放在提示词开头或结尾；生成模型容易跑偏时可首尾各重复一次。
+
+## 8. Midjourney 专用输出短模板
+
+用户指定 MJ 时，尽量用短交付，不输出固定骨架表：
+
+```text
+MJ升级思路
+- 主事件：[一个空间奇观，不混合多个爆款场景]
+- 画幅：[--ar] 对应的构图策略
+- 尺度：[人物/鸟/神兽/建筑的画面占比]
+- 控制：[最容易跑偏的 2–3 个点]
+
+Midjourney完整提示词
+[one paste-ready prompt ending with native MJ suffixes]
+
+可选负面词
+--no text logo watermark signature western castle European palace western dome cathedral neon cyberpunk plastic CGI oversized figures character close-up
+
+如果还糊
+[one concrete adjustment]
+```
+
